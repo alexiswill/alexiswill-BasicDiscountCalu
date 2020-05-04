@@ -1,0 +1,26 @@
+<div class="card">
+  <div style="text-align:center"><br>
+
+    <h1>
+  {{ title }}
+    </h1>
+  
+      <div class="card-body">
+          <div class="form-group">
+              <div class="form-group d-flex flex-row">
+       <label>Discount</label>
+      <input [(ngModel)]="num1"  type="number"  name="num1" class="form-control"> &nbsp;&nbsp;&nbsp;
+      <label>Price</label>
+      <input [(ngModel)]="num2" type="number"  name="num2" class="form-control" >
+              </div>
+          </div>
+          <div class="">
+              <br>
+      <button mat-raised-button color="primary" (click) = 'percent()'> Sales Price </button>&nbsp;&nbsp;&nbsp;
+      <br><br><br>
+    </div>
+    <div class="card-footer">
+        <h4>${{result}}</h4>
+    </div>
+      </div>
+  </div>
